@@ -1,7 +1,8 @@
-import assert from "assert";
-import ganache from "ganache-cli";
-import Web3 from "web3";
-import { contracts } from "../compile.js";
+const assert = require("assert");
+const ganache = require("ganache-cli");
+const Web3 = require("web3");
+const { compile } = require("../jobs");
+const { contracts } = compile();
 
 const web3 = new Web3(ganache.provider());
 let accounts, inbox;

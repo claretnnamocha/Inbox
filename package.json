@@ -4,7 +4,6 @@
   "description": "A simple solidity & node project",
   "main": "index.js",
   "author": "Claret Nnamocha <devclareo@gmail.com>",
-  "type": "module",
   "license": "MIT",
   "private": false,
   "dependencies": {
