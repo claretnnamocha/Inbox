@@ -1,62 +1,68 @@
 {
 	"compiler": {
-		"version": "0.4.17+commit.bdeb9e52"
+		"version": "0.8.9+commit.e5eed63a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": false,
 				"inputs": [
 					{
-						"name": "newMessage",
+						"internalType": "string",
+						"name": "initialMessage",
 						"type": "string"
 					}
 				],
-				"name": "setMessage",
-				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
-				"constant": true,
 				"inputs": [],
 				"name": "getMessage",
 				"outputs": [
 					{
+						"internalType": "string",
 						"name": "",
 						"type": "string"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"name": "initialMessage",
+						"internalType": "string",
+						"name": "newMessage",
 						"type": "string"
 					}
 				],
-				"payable": false,
+				"name": "setMessage",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inbox.sol": "Inbox"
+			"src/contracts/Inbox.sol": "Inbox"
 		},
+		"evmVersion": "london",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -64,10 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inbox.sol": {
-			"keccak256": "0xa06765d83edae773e0b38e2d102ae7056d514ac97e593c78c3361e8d6af3f10b",
+		"src/contracts/Inbox.sol": {
+			"keccak256": "0x84347d545c6392afdaae0205dd4ad717b353697f92a6ed69c3b5e8e955fbd0af",
+			"license": "None",
 			"urls": [
-				"bzzr://44c7b51251a67fe38b342114d6f149d6b55033819af9b3d74c03507c79d7e283"
+				"bzz-raw://58e27b26002481eb24249e5def6ee8034efb0a616206c5830758595926262543",
+				"dweb:/ipfs/QmV9pfGfjT7ozYU8QbDNBKfTtPsqkSnosFqdVXQRjUNeAJ"
 			]
 		}
 	},
